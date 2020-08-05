@@ -35,7 +35,7 @@ public class ProgrammaticTransactionDemoApplication implements CommandLineRunner
         mTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
             @Override
             protected void doInTransactionWithoutResult(TransactionStatus transactionStatus) {
-                mJdbcTemplate.execute("insert into FOO (ID,BAR) values (3,'hhhh')");
+                mJdbcTemplate.execute("insert into FOO (ID,BAR) values (300,'hhhh')");
                 log.info("count in Transaction =" + getCount());
                 transactionStatus.setRollbackOnly();
             }

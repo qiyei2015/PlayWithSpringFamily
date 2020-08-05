@@ -40,9 +40,9 @@ public class JdbcDemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info(dataSource.toString());
-        mFooDao.insertData();
-        mBatchFooDao.batchInsert();
-        mFooDao.listData();
+        //mFooDao.insertData();
+        //mBatchFooDao.batchInsert();
+        //mFooDao.listData();
     }
 
     @Bean
